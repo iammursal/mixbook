@@ -151,27 +151,25 @@ body {
 #top-link p {
   display: flex;
   justify-content: flex-end;
-  width: 1200px;
+  max-width: 1200px;
   line-height: 2rem;
-  margin: 0 auto;
+  margin: auto;
   font-size: 0.8rem;
   padding-top: 0;
 }
 
 #main-navbar {
-  width: 100vw;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
 }
 #main-navbar .navbar {
   display: flex;
   align-content: center;
-  justify-content: space-between;
   max-width: 1200px;
   height: 90px;
   margin: auto;
 }
 #main-navbar .navbar #logo {
-  margin: auto 0;
+  margin: auto auto auto 0;
   width: 140px;
   height: 50px;
 }
@@ -190,12 +188,13 @@ body {
 #main-navbar .navbar nav .acc {
   width: 400px;
   height: 35px;
+  margin: auto 0 auto auto;
 }
 #main-navbar .navbar nav .acc li {
   padding: 10px 0 0 20px;
 }
 #main-navbar .navbar nav .menu {
-  width: 800px;
+  width: 750px;
   height: 55px;
 }
 #main-navbar .navbar nav .menu > li {
@@ -271,7 +270,7 @@ body {
 }
 
 #showcase {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   padding: 0;
   height: 500px;
   display: flex;
@@ -281,12 +280,10 @@ body {
 #showcase .slider {
   margin: auto;
   width: 1200px;
-  height: 500px;
   overflow: hidden;
 }
 #showcase .slider .slides {
   width: 500%;
-  height: 500px;
   display: flex;
 }
 #showcase .slider .slides input {
@@ -294,12 +291,11 @@ body {
 }
 #showcase .slider .slides .slide {
   width: 20%;
-  transition: 2s;
+  transition: 1s;
   z-index: -2;
 }
 #showcase .slider .slides .slide img {
   width: 1200px;
-  height: 500px;
 }
 #showcase .slider .slides #radio1:checked ~ .navigation-manual .one {
   border: 2px solid #40d3dc;
@@ -318,8 +314,9 @@ body {
 }
 #showcase .slider .slides .navigation-manual {
   position: absolute;
-  top: 623px;
+  top: 672px;
   width: 1200px;
+  margin: auto;
   margin-top: -18px;
   display: flex;
   justify-content: center;
@@ -350,7 +347,7 @@ body {
 }
 
 main #product {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 1000px;
 }
@@ -372,10 +369,11 @@ main #product .container .custom-photo {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 80px;
-  width: 1200px;
+  padding: 60px 60px;
+  max-width: 1200px;
   height: 670px;
   background: #f5fafa;
+  margin: auto;
 }
 main #product .container .custom-photo .primary-text {
   width: 300px;
@@ -388,21 +386,21 @@ main #product .container .custom-photo input {
   display: none;
 }
 main #product .container .custom-photo .device-screen {
+  padding: 10px;
   position: relative;
 }
 main #product .container .custom-photo .device-screen .computer {
   border-radius: 3px;
-  padding: 10px;
   background-color: #fff;
-  width: 640px;
-  height: 410px;
+  min-width: 640px;
+  min-height: 410px;
+  margin: 20px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
 }
 main #product .container .custom-photo .device-screen .mobile {
   position: absolute;
-  left: 205px;
+  left: 256px;
   border-radius: 3px;
-  padding: 10px;
   background-color: #fff;
   width: 210px;
   height: 410px;
@@ -465,7 +463,7 @@ main #product .container .comment p::after {
   text-align: end;
 }
 main #designs {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
@@ -474,7 +472,8 @@ main #designs .container {
   justify-content: space-between;
 }
 main #designs .container .container-left {
-  width: 758px;
+  max-width: 758px;
+  padding-right: 20px;
 }
 main #designs .container .container-left .primary-text {
   padding-bottom: 3rem;
@@ -490,13 +489,13 @@ main #designs .container .container-left .image a {
 main #designs .container .container-left .image img {
   margin-bottom: 10px;
   display: block;
-  width: 100%;
-  height: 650px;
+  width: auto;
+  height: auto;
 }
 main #designs .container .container-left .comment {
   position: relative;
   top: -2.7rem;
-  width: 500px;
+  max-width: 500px;
   height: 170px;
   background-color: #f5fbfb;
   float: right;
@@ -519,7 +518,7 @@ main #designs .container .container-left .comment .empty-box {
   box-shadow: -10px 15px #ffe681;
 }
 main #designs .container .container-right {
-  width: 400px;
+  max-width: 400px;
 }
 main #designs .container .container-right .photo-lable h4 {
   font-weight: 500;
@@ -540,13 +539,27 @@ main #designs .container .container-right .photo-lable .martha {
   position: relative;
   padding-bottom: 2rem;
 }
+main #designs .container .container-right .photo-lable .martha::before {
+  position: absolute;
+  content: "NEW";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 25px;
+  background-color: #067c96;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-align: center;
+}
 main #designs .container .container-right .photo-lable .martha .martha-image {
   width: 400px;
   height: 400px;
   box-shadow: 13px 10px #fedcc1;
 }
 main #shop {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 4.5rem;
@@ -567,6 +580,7 @@ main #shop .container .box-row-top .meaningful {
   justify-content: space-between;
   align-items: flex-start;
   padding: 56px;
+  margin-right: 20px;
 }
 main #shop .container .box-row-top .meaningful h1 {
   padding-right: 3.5rem;
@@ -581,12 +595,13 @@ main #shop .container .box-row-top .photo-books a img {
 }
 main #shop .container .box-row-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 main #shop .container .box-row-bottom a {
   width: 389px;
   height: 272px;
+  margin: 0 10px;
 }
 main #shop .container .box-row-bottom a img {
   width: 389px;
@@ -594,12 +609,12 @@ main #shop .container .box-row-bottom a img {
 }
 main #shop .container .box-row-bottom a .shop-button {
   width: 389px;
+  margin: 0 10px;
 }
 main #hp-gr {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 380px;
   margin-bottom: 1rem;
 }
@@ -615,7 +630,7 @@ main #hp-gr .banner .container-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 1200px;
+  max-width: 1200px;
   height: 284px;
 }
 main #hp-gr .banner .container-box .text-container {
@@ -628,7 +643,7 @@ main #hp-gr .banner .container-box .text-container {
 }
 main #hp-gr .banner .container-box .text-container h4,
 main #hp-gr .banner .container-box .text-container p {
-  width: 522px;
+  max-width: 522px;
 }
 main #community {
   display: flex;
@@ -655,7 +670,7 @@ main #community .manual-photo-slideshow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  max-width: 1200px;
   height: 276px;
   padding: 10px 0;
   overflow: hidden;
@@ -690,7 +705,7 @@ main #community .manual-photo-slideshow .arrow-right-2 {
 }
 main #community .manual-photo-slideshow .image-display {
   z-index: -1;
-  width: 1120px;
+  max-width: 1120px;
   overflow: hidden;
 }
 main #community .manual-photo-slideshow .image-display .image-row {
@@ -698,12 +713,10 @@ main #community .manual-photo-slideshow .image-display .image-row {
   justify-content: flex-start;
   align-items: center;
   width: 300%;
-  overflow: hidden;
 }
 main #community .manual-photo-slideshow .image-display .image-row img {
-  width: 276px;
-  height: 276px;
-  margin: 0 2px;
+  width: 8.15%;
+  margin: 0 0.1%;
   transition: all 1s ease;
 }
 main #community .manual-photo-slideshow #right-1:checked ~ .image-display .image-row .first {
@@ -755,13 +768,11 @@ main #community .btn {
   margin: 4rem auto 1.5rem;
 }
 main #ratings {
-  width: 100vw;
   height: 240px;
   margin: 0 0 50px;
 }
 main #ratings .manual-rating-slideshow {
   position: relative;
-  width: 100vw;
   height: 180px;
   margin: auto;
 }
@@ -838,9 +849,14 @@ main #ratings .manual-rating-slideshow .rating-display .rating-row .rating-box h
   white-space: nowrap;
   overflow: hidden;
   font-size: 0.8rem;
-  margin: 0.8rem 0;
+  margin: 0.4rem 0;
 }
 main #ratings .manual-rating-slideshow .rating-display .rating-row .rating-box p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   font-size: 0.8rem;
   margin-top: 0px;
   line-height: 1rem;
@@ -942,11 +958,12 @@ main #explore .primary-text {
   margin-bottom: 12rem;
 }
 main #explore .photo-lable {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100vw;
-  height: 360px;
+  height: 400px;
   margin: 0 auto;
   background: #faf9f7;
 }
@@ -955,10 +972,8 @@ main #explore .photo-lable .christmas-cards,
 main #explore .photo-lable .calendars {
   position: relative;
   top: -100px;
-  width: 21rem;
-  height: auto;
+  max-width: 21rem;
   margin: 0.5rem;
-  margin-top: 0;
 }
 main #explore .photo-lable .baby-books:hover,
 main #explore .photo-lable .christmas-cards:hover,
@@ -974,8 +989,8 @@ main #explore .photo-lable .calendars h5 {
 main #explore .photo-lable .baby-books .image img,
 main #explore .photo-lable .christmas-cards .image img,
 main #explore .photo-lable .calendars .image img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 main #explore .photo-lable .baby-books .hl-link,
 main #explore .photo-lable .christmas-cards .hl-link,
@@ -987,15 +1002,16 @@ main footer {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 100vw;
   height: 780px;
   background: #f5f5f5;
 }
 main footer .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  width: 1200px;
+  max-width: 1200px;
+  margin: 0 20px;
+  overflow: hidden;
   height: 480px;
   border-bottom: #ccc 1px dashed;
   padding-top: 80px;
@@ -1013,6 +1029,7 @@ main footer .links li {
   display: block;
 }
 main footer .links .contact {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1037,6 +1054,9 @@ main footer .links .products {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 493px;
+  padding: 0 1rem;
+  margin: auto;
 }
 main footer .links .products h5 {
   margin-bottom: 0.6rem;
@@ -1045,6 +1065,10 @@ main footer .links .products div {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+main footer .links .programs {
+  margin: auto;
+  width: 130px;
 }
 main footer .links .programs h5 {
   margin-bottom: 0.6rem;

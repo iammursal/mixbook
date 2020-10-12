@@ -1,0 +1,131 @@
+@media (max-width: 1300px) {
+  #top-link p {
+    margin-right: 50px;
+  }
+
+  .navbar {
+    padding: 0 50px;
+  }
+  .navbar nav {
+    width: 700px;
+  }
+  .navbar nav .menu .insp {
+    display: none;
+  }
+  #showcase .slider {
+    top: 0;
+    width: 97%;
+  }
+}
+@media (max-width: 1250px) {
+  .navbar nav {
+    width: 600px;
+  }
+  .navbar nav .menu .deals {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar nav {
+    width: 600px;
+  }
+  .navbar nav .menu .deals {
+    display: none;
+  }
+
+  #showcase .slider {
+    top: 0;
+    width: 95%;
+  }
+  #showcase .slider .slides .navigation-manual {
+    width: 1100px;
+  }
+
+  main #product {
+    height: 1300px;
+  }
+  main #product .container .custom-photo {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px;
+    padding: 30px;
+  }
+  main #product .container .custom-photo .primary-text {
+    width: 100%;
+    height: auto;
+  }
+  main #product .container .custom-photo a {
+    display: none;
+  }
+  main #product .container .custom-photo .device-screen {
+    padding: 0;
+  }
+  main #product .container .custom-photo .device-screen .computer {
+    margin: 0;
+  }
+  main #product .container .custom-photo .device-screen .mobile {
+    margin: 0;
+  }
+  main #product .container .custom-photo .devices {
+    right: 50%;
+  }
+  main #product .container .custom-photo .devices div {
+    transform: translateX(50%);
+  }
+  main #product .container .custom-photo .devices .bottom-bar-c {
+    transform: translateX(90%);
+  }
+  main #product .container .custom-photo .devices .bottom-bar-m {
+    transform: translateX(130%);
+  }
+  main #product .container .comment {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  #showcase .slider {
+    top: 0;
+    width: 92%;
+  }
+  #showcase .slider .slides .navigation-manual {
+    width: 1000px;
+  }
+
+  main #hp-gr .banner .container-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  main #hp-gr .banner .container-box .text-container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;
+  }
+  main #hp-gr .banner .container-box img {
+    display: none;
+  }
+  main #community .manual-photo-slideshow .image-display .image-row img {
+    width: 10.93%;
+  }
+  main #ratings .manual-rating-slideshow .rating-display .rating-row {
+    width: 375%;
+  }
+}
+@media (max-width: 1150px) {
+  #showcase .slider {
+    top: 0;
+    width: 90%;
+  }
+  #showcase .slider .slides .navigation-manual {
+    width: 900px;
+  }
+}
+@media (max-width: 1000px) {
+  main #rating .rating-box {
+    width: 10%;
+  }
+}
