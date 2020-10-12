@@ -465,7 +465,7 @@ main #product .container .comment p::after {
 main #designs {
   max-width: 1200px;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 7rem;
 }
 main #designs .container {
   display: flex;
